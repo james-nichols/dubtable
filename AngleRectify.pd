@@ -1,0 +1,20 @@
+#N canvas 777 147 534 376 10;
+#X obj 56 23 inlet;
+#X obj 56 293 outlet;
+#X obj 70 74 - 1.57077;
+#X obj 56 114 fmod 6.28312;
+#X obj 56 156 moses 3.14156;
+#X obj 131 188 * -1;
+#X obj 131 225 + 6.28312;
+#X text 143 43 Makes angle parameter continuous \, values 0 in flat
+orientation \, maxes at 1 in 180 deg opposite. By James Nichols - 18-12-08
+;
+#X obj 56 255 / 3.14156;
+#X connect 0 0 2 0;
+#X connect 0 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 8 0;
+#X connect 4 1 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 8 0;
+#X connect 8 0 1 0;
